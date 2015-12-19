@@ -11,7 +11,7 @@ Te = [];
 
 % NOTE: you should do this randomly! and k-fold!
 idxs = 1:size(train.X_hog,1);
-for i = 1:10
+for i = 1:1
     setSeed(randi(100,1));
     idxs = randperm(max(idxs),max(idxs));
 

@@ -12,10 +12,12 @@ split = 0.8;
 Tr.idxs = idxs(1,1:split*size(idxs,2));
 Te.idxs = idxs(1,split*size(idxs,2)+1:end);
 
+%Tr.idxs = 1:2:size(idxs,2);
 Tr.X = train.X_hog(Tr.idxs,:);
 Tr.X = [Tr.X train.X_cnn(Tr.idxs,:)];
 Tr.y = train.y(Tr.idxs);
 
+%Te.idxs = 2:2:size(idxs,2);
 Te.X = train.X_hog(Te.idxs,:);
 Te.X = [Te.X train.X_cnn(Te.idxs,:)];
 Te.y = train.y(Te.idxs);
