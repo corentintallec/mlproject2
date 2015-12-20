@@ -1,0 +1,29 @@
+--------------------
+       README
+--------------------
+
+What's the point of this code ?
+-------------------------------
+The code provided in this folder aims at training
+neural network models on the data set provided for
+the second Machine Learning project of the PCML
+class. It heavily uses the Theano framework.
+
+How can I run the code ?
+------------------------
+To run the code, you need a sufficiently recent version
+of python 2, as well as some recent versions of numpy,
+matplotlib and theano. For an easy tutorial on how to
+install theano, you can check: 
+http://deeplearning.net/software/theano/install.html
+The code in utils provides facilities to train various
+models, and can be executed to train a simple MLP on the
+dataset (provided you initially put the train folder in the
+python folder). 
+The code in cnn_learning enables you to train a Convolutional
+Neural Network model on the CNN features provided. The same
+prerequisites are to be fullfilled.
+The code in generate_results is aim at providing predictions
+for test data. The test.mat file must previously be placed into
+the train folder, placed in the python folder, for the script to
+run.
